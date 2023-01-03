@@ -1,0 +1,16 @@
+body{
+    background-image: url(img/Street\(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+#character1{
+    margin-top: 15%;
+}
+
+#character2{
+    margin-top: -40%;
+    margin-left: 65%;
+}

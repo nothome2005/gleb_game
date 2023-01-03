@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "ClassicaTwo";
+    src: url(fonts/ClassicaTwo.ttf);
+}
+
+body{
+    background-color: blanchedalmond;
+}
+.text{
+    text-align: center;
+}
+.GIF{
+    text-align: center;
+}
+.MML{
+    text-align: center;
+    color: rgb(255, 0, 111);
+    font-size: larger; 
+}
