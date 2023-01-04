@@ -1,2 +1,2 @@
-var snd = new Audio("My-Feelings-_Doki-Doki-Literature-Club_.wav");
+var snd = new Audio("music/My-Feelings-Doki-Doki-Literature-Club.wav");
 snd.play();
