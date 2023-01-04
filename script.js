@@ -7,6 +7,9 @@ var num = 0;
 
 // ✅ Change button text on click
 btn.addEventListener('click', function handleClick() {
+  if (num == (dialogs.length - 1)) {
+    num = 0;
+  }
   Label.textContent = dialogs[num];
   num++;
 });
