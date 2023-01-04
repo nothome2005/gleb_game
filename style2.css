@@ -1,9 +1,12 @@
 body {
     background-color: blanchedalmond;
 }
+
 .GIF{
     text-align: center;
 }
+
 .text{
+    color: rgb(255, 0, 111);
     text-align: center;
 }
