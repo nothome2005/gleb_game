@@ -6,6 +6,35 @@ body{
     overflow: hidden;
 }
 
+.menu-lines,
+.menu-lines::after,
+.menu-lines::before{
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: rgb(162, 0, 255);
+}
+
+.menu-button:hover .menu-lines{
+    filter:contrast(3)
+}
+
+.menu-lines{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-lines::before{
+    content: '';
+    top: -15px;
+}
+
+.menu-lines::after{
+    content: '';
+    top: 15px;
+}
+
 #character1{
     margin-top: 15%;
 }
