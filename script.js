@@ -5,7 +5,8 @@ snd.play();
 const dialogs = ['Привет!', 'Я наконец-то заработала!','Я так рада этому!']
 var num = 0;
 
-// ✅ Change button text on click
+
+
 btn.addEventListener('click', function handleClick() {
   if (num == (dialogs.length)) {
     num = 0;
