@@ -1,4 +1,6 @@
 const snd = new Audio("music/My-Feelings-Doki-Doki-Literature-Club.wav");
+const keyboard_sound = new Audio('music/cf9b99726102246.wav');
+keyboard_sound.volume = 1;
 const btn = document.getElementById('btn');
 const Label = document.getElementById('LABEL')
 const character = document.getElementById('character');
@@ -19,13 +21,14 @@ function change_dialog_logo() {
 }
 
 function Anim_Text() {
-
     change_dialog_logo()
     if (anim_var < (dialogs[num].length + 1)) {
+        keyboard_sound.play();
         Label.textContent = dialogs[num].slice(0,anim_var);
         anim_var++;
         setTimeout(Anim_Text, speed);
     } else {
+        keyboard_sound.pause();
         anim_var = 0;
         num++;
   }
