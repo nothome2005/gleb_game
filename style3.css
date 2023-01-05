@@ -4,16 +4,9 @@ body{
     background-size: 100%;
     margin-top: 5%;
     overflow: hidden;
+    
 }
 
-.menu-lines,
-.menu-lines::after,
-.menu-lines::before{
-    position: absolute;
-    width: 40px;
-    height: 6px;
-    background-color: rgb(162, 0, 255);
-}
 
 .menu-button:hover .menu-lines{
     filter:contrast(3)
@@ -36,14 +29,26 @@ body{
 }
 
 #character1{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 #character2{
-    margin-top: -40%;
+    margin-top: -30%;
     margin-left: 65%;
 }
 #LABEL {
-    color: white;
-    background-color: black;
+    color: black;
+    position: absolute;
+    font-size: 45px;
+    top: 35%;
+    margin-left: 15%;
+}
+#dw {
+    margin-top: -15%;
+    position: relative;
+}
+#btn {
+    position: absolute;
+    top: 62%;
+    margin-left: -35%;
 }
