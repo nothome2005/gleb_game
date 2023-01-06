@@ -9,10 +9,20 @@
     <title>MML</title>
 </head>
 <body>
+    <script type="text/javascript">
+        if (screen.width == 2560) {
+            style_file.setAttribute('href',"style3.css");
+            console.log('OK');
+        }
+        if (screen.width == 1920) {
+            style_file.setAttribute('href',"style3_alternative.css");
+            console.log('NO');
+        }
+    </script>
     <div id="dw">
         <img id="character" width="50%" height="20%"  src="dialog window/DialogWindow-Komi(2).png" alt="">
         <h1 id="LABEL"></h1>
-        <button id="btn">Click me</button>
+        <button type="submit" id="btn"><img src="dialog window\DialogArrow.png" alt=""></button>
     </div>
     
     <div id="character1">
