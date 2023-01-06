@@ -1,4 +1,4 @@
-const keyboard_sound = new Audio('music/cf9b99726102246.wav');
+const keyboard_sound = new Audio('sounds/sound.wav');
 const snd = new Audio("music/My-Feelings-Doki-Doki-Literature-Club.wav");
 snd.loop = true;
 const btn = document.getElementById('btn');
