@@ -1,6 +1,5 @@
 const keyboard_sound = new Audio('sounds/sound.wav');
-const snd = new Audio("music/My-Feelings-Doki-Doki-Literature-Club.wav");
-snd.loop = true;
+
 const btn = document.getElementById('btn');
 const Label = document.getElementById('LABEL');
 const character = document.getElementById('character');
@@ -12,7 +11,8 @@ const dialog_img = ['girl','man','girl'];
 var num = 0;
 var anim_var = 0;
 var speed = 50;
-snd.play();
+
+
 
 
 function change_dialog_logo() {
