@@ -1,5 +1,5 @@
 const keyboard_sound = new Audio('music/cf9b99726102246.wav');
-const snd = new Audio("music/My-Feelings-Doki-Doki-Literature-Club.wav");
+const snd = new Audio("sounds/sound.wav");
 const btn = document.getElementById('btn');
 const Label = document.getElementById('LABEL');
 const character = document.getElementById('character');
