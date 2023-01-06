@@ -3,50 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=960px, height=540px initial-scale=1.0">
     <link rel="shortcun icon" href="img/WelcomeRoses.gif">
-    <link rel="stylesheet" href="style3.css">
+    <link id="style_file" rel="stylesheet" href="">
     <title>MML</title>
 </head>
 <body>
     <script type="text/javascript">
+        let theme = document.getElementById("style_file");
+
         if (screen.width == 2560) {
-            style_file.setAttribute('href',"style3.css");
-            console.log('OK');
-        }
-        if (screen.width == 1920) {
-            style_file.setAttribute('href',"style3_alternative.css");
-            console.log('NO');
+            theme.href = "style3.css";
+        } else {
+            theme.href = "style3_alternative.css"
         }
     </script>
-    <div id="dw">
-        <img id="character" width="50%" height="20%"  src="dialog window/DialogWindow-Komi(2).png" alt="">
-        <h1 id="LABEL"></h1>
-        <button type="submit" id="btn"><img src="dialog window\DialogArrow.png" alt=""></button>
-    </div>
-    
-    <div id="character1">
-        <img src="character/Komi.png" alt="1"> 
-    </div>
-    
+    <div class="wrapper">
+        <div id="dw">
+            <img id="character" width="50%" height="20%"  src="dialog window/DialogWindow-Komi(2).png" alt="">
+            <h1 id="LABEL"></h1>
+            <button type="submit" id="btn"><img src="dialog window\DialogArrow.png" alt=""></button>
+        </div>
+        <div id="character1">
+            <img src="character/Komi.png" alt="1"> 
+        </div>
 
-    <div id="character2">
-        <img src="character/H.png" alt="2"> 
-    </div>
+        <div id="character2">
+            <img src="character/H.png" alt="2"> 
+        </div>
 
-    <div class="menu">
-        <div class="title"><h1><span>M</span>еню</h1></div>
-        <div class="list-menu">
-            <ul>
-                <li><a href="index(2).html">О нас</a></li>
-                <h1 class="menu-item">  Music</h1>
-                <input type="range" min="0" max="100" value="20" class="slider" id="myRange">
-                <h1 class="menu-item">Typing sound</h1>
-                <input type="range" min="0" max="100" value="20" class="slider" id="kb_volume_controller">
-            </ul>
+        <div class="menu">
+            <div class="title"><h1><span>M</span>еню</h1></div>
+            <div class="list-menu">
+                <ul>
+                    <li><a href="index(2).html">О нас</a></li>
+                    <h1 class="menu-item">  Music</h1>
+                    <input type="range" min="0" max="100" value="20" class="slider" id="myRange">
+                    <h1 class="menu-item">Typing sound</h1>
+                    <input type="range" min="0" max="100" value="20" class="slider" id="kb_volume_controller">
+                </ul>
+            </div>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
