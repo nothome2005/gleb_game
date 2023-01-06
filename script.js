@@ -25,7 +25,7 @@ function change_dialog_logo() {
 
 function Anim_Text() {
 
-    change_dialog_logo();
+    change_dialog_logo()
     keyboard_sound.play();
     if (anim_var < (dialogs[num].length + 1)) {
         Label.textContent = dialogs[num].slice(0,anim_var);
@@ -35,7 +35,7 @@ function Anim_Text() {
         keyboard_sound.pause();
         anim_var = 0;
         num++;
-  }
+    }
 }
 
 
@@ -46,6 +46,7 @@ btn.addEventListener('click', function handleClick() {
         num = 0;
     }
     Anim_Text();
+    keyboard_sound.pause();
  
 });
 
@@ -58,13 +59,13 @@ kbvm.oninput = function() {
 
 
 window.onload = function() {
-    
-    if (screen.width == 2560) {
-        style_file.setAttribute('href',"style3.css")
-        console.log('OK');
-    }
-    if (screen.width == 1920) {
-        style_file.setAttribute('href',"style3_alternative.css")
-        console.log('NO');
-    }
+
+}
+if (screen.width == 2560) {
+    style_file.setAttribute('href',"style3.css");
+    console.log('OK');
+}
+if (screen.width == 1920) {
+    style_file.setAttribute('href',"style3_alternative.css");
+    console.log('NO');
 }
