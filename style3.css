@@ -50,6 +50,9 @@ body{
     position: absolute;
     top: 62%;
     margin-left: -35%;
+    background: url('dialog window/DialogArrow.png');
+    border: 0;
+    background-repeat: no-repeat;
 }
 .menu{
     position: fixed;
