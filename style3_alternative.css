@@ -29,6 +29,9 @@ body{
     position: absolute;
     top: 61.5%;
     margin-left: -11%;
+    background: url('dialog window/DialogArrow.png');
+    border: 0;
+    background-repeat: no-repeat;
 }
 
 .menu{
