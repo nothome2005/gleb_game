@@ -3,6 +3,8 @@ body{
     background-size: 100%;  
     background-repeat: no-repeat;
     overflow: hidden;
+    min-width: 960px;
+    min-height: 540px;
 }
 
 
@@ -48,7 +50,7 @@ body{
 }
 #btn {
     position: absolute;
-    top: 62%;
+    top: 55%;
     margin-left: -35%;
     background: url('dialog window/DialogArrow.png');
     border: 0;
@@ -63,7 +65,7 @@ body{
     backdrop-filter: blur(16px);
     border-right: 7px solid blueviolet;
     top: -1px;
-    left: -215px;
+    left: -280px;
     transition: all 0.2s ease;
 }
 
