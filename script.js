@@ -1,16 +1,32 @@
-const keyboard_sound = new Audio('sounds/sound.wav');
+//var config = require('data.json');
 
+const keyboard_sound = new Audio('sounds/sound.wav');
 const btn = document.getElementById('btn');
 const Label = document.getElementById('LABEL');
 const character = document.getElementById('character');
 const slider = document.getElementById("myRange");
 const kbvm = document.getElementById("kb_volume_controller");
 const style_file = document.getElementById("style_file");
-const dialogs = ['Привет!', 'Я наконец-то заработала!','Я так рада этому!'];
+const answ_div = document.getElementById("container-buttons");
+const answ_btn = document.getElementsByClassName("answear");
+
+const dialogs = ['Привет!', 'Я наконец-то заработала!','Я так рада этому! Ты рад?'];
 const dialog_img = ['girl','man','girl'];
+
 var num = 0;
 var anim_var = 0;
 var speed = 50;
+
+answ_btn[0].addEventListener('click', function handleClick() {
+    console.log("Yes");
+    answ_div.style.visibility = 'hidden';
+    btn.style.visibility = 'visible';
+});
+answ_btn[1].addEventListener('click', function handleClick() {
+    console.log("No");
+    answ_div.style.visibility = 'hidden';
+    btn.style.visibility = 'visible';
+});
 
 
 
@@ -42,11 +58,19 @@ function Anim_Text() {
 
 btn.addEventListener('click', function handleClick() {
     change_dialog_logo();
+    if (num == (dialogs.length - 1))
+    {
+        answ_div.style.visibility = 'visible';
+        btn.style.visibility = 'hidden';
+    }
     if (num == (dialogs.length))
     {
-        num = 0;
+        answ_div.style.visibility = 'hidden';
     }
-    Anim_Text();
+    if (num < (dialogs.length)) {
+        Anim_Text();
+    }
+    
     keyboard_sound.pause();
  
 });

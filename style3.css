@@ -50,7 +50,7 @@ body{
 }
 #btn {
     position: absolute;
-    top: 55%;
+    top: 54%;
     margin-left: -35%;
     background: url('dialog window/DialogArrow.png');
     border: 0;
@@ -108,3 +108,10 @@ body{
 .menu-item {
     color: azure;
 }
+#container-buttons {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    margin-left: 35%;
+    visibility: hidden;
+  }
