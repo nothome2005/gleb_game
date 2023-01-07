@@ -1,5 +1,5 @@
-//var config = require('data.json');
-
+//
+//const obj = JSON.parse(config);
 const keyboard_sound = new Audio('sounds/sound.wav');
 const btn = document.getElementById('btn');
 const Label = document.getElementById('LABEL');
