@@ -17,12 +17,27 @@ var num = 0;
 var anim_var = 0;
 var speed = 50;
 
-answ_btn[0].addEventListener('click', function handleClick() {
+async function asyncReadFile(filename) { // Read file.txt
+    try {
+      const contents = await fsPromises.readFile(filename, 'utf-8');
+  
+      const arr = contents.split(/\r?\n/);
+  
+      console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+  
+      return arr;
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+
+answ_btn[0].addEventListener('click', function handleClick() {  // Button "Yes"
     console.log("Yes");
     answ_div.style.visibility = 'hidden';
     btn.style.visibility = 'visible';
 });
-answ_btn[1].addEventListener('click', function handleClick() {
+answ_btn[1].addEventListener('click', function handleClick() { //Button "No"
     console.log("No");
     answ_div.style.visibility = 'hidden';
     btn.style.visibility = 'visible';
@@ -31,7 +46,7 @@ answ_btn[1].addEventListener('click', function handleClick() {
 
 
 
-function change_dialog_logo() {
+function change_dialog_logo() {  //Function change character avatar
     if (dialog_img[num] == 'man') {
         character.src = 'dialog window/DialogWindow-H(2).png';
     }
@@ -40,7 +55,7 @@ function change_dialog_logo() {
     }
 }
 
-function Anim_Text() {
+function Anim_Text() { //Control text animation and keyboard sfx
 
     change_dialog_logo()
     keyboard_sound.play();
@@ -56,7 +71,7 @@ function Anim_Text() {
 }
 
 
-btn.addEventListener('click', function handleClick() {
+btn.addEventListener('click', function handleClick() { //Handler for "Next" button
     change_dialog_logo();
     if (num == (dialogs.length - 1))
     {
@@ -75,10 +90,10 @@ btn.addEventListener('click', function handleClick() {
  
 });
 
-slider.oninput = function() {
+slider.oninput = function() { //Slider background music volume
     snd.volume = this.value/100;
 } 
-kbvm.oninput = function() {
+kbvm.oninput = function() { //Slider keyboard sfx volume
     keyboard_sound.volume = this.value/100;
 } 
 
