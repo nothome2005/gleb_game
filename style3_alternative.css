@@ -87,3 +87,10 @@ body{
 .menu-item {
     color: white;
 }
+#container-buttons {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    margin-left: 35%;
+    visibility: hidden;
+  }
